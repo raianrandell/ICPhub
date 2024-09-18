@@ -1,0 +1,176 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background: linear-gradient(to bottom, #185519, #36BA98);
+    color: #f0f0f0; /* Light color for general text */
+}
+
+.container {
+    max-width: 100%;
+    margin-left: 20px; /* Align to the left */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.txt {
+    padding-left: 30px;
+}
+
+.txt p strong, #name {
+    color: #fff; /* White for better contrast */
+}
+
+h2 {
+    color: #f0f0f0; /* Lighter color for section headings */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+#ulidstyle {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 5px;
+    color: #f0f0f0; /* Lighter color for list items */
+}
+
+ul li .fa {
+    font-size: 25px;
+    color: #f0f0f0; /* More vibrant color for icons */
+}
+
+.hobbies {
+    padding: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ff5f5f; /* Updated link color for visibility */
+}
+
+a:hover {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+#arrowUp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #5c6ac4;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#arrowUp:hover {
+    background-color: #ff5f5f;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* General styling for social links */
+.socialInfo {
+    margin-bottom: 10px;
+}
+
+.socialInfo a {
+    text-decoration: none;
+    color: #f0f0f0; /* Light color for visibility */
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.socialInfo a .fa {
+    font-size: 24px; /* Size for social icons */
+    margin-right: 8px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add hover transition */
+}
+
+/* Specific hover colors for each social media */
+.facebook:hover {
+    color: #1877F2; /* Facebook hover color */
+}
+
+.instagram:hover {
+    color: #C13584; /* Instagram hover color */
+}
+
+.twitter:hover {
+    color: #1DA1F2; /* Twitter hover color */
+}
+
+/* Icon hover effect */
+.socialInfo a:hover .fa {
+    transform: scale(1.2); /* Grow icon on hover */
+}
+
+/* Hover effect for the social links */
+.socialInfo a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Adding Facebook, Instagram, and Twitter classes to the HTML */
+.socialInfo a.facebook .fa {
+    color: #1877F2; /* Facebook color */
+}
+
+.socialInfo a.instagram .fa {
+    color: #C13584; /* Instagram color */
+}
+
+.socialInfo a.twitter .fa {
+    color: #1DA1F2; /* Twitter color */
+}
+
+hr {
+    border: none; /* Remove default border */
+    height: 2px; /* Thickness of the line */
+    background: linear-gradient(to right, #ff5f5f, #ffcc00); /* Gradient color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 40px 0; /* Space above and below */
+    border-radius: 5px; /* Rounded edges */
+    position: relative;
+}
+
+hr::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px; /* Position above the hr */
+    left: 50%;
+    width: 30px; /* Width of the decorative element */
+    height: 10px; /* Height of the decorative element */
+    background: white; /* Background color of the decorative element */
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
